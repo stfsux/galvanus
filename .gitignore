@@ -1,0 +1,7 @@
+*.kicad_pcb-bak
+*.cmp
+*.bak
+*.net
+*-cache.lib
+*.dcm
+

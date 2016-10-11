@@ -1,0 +1,962 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:special
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:maxim
+LIBS:ti
+EELAYER 27 0
+EELAYER END
+$Descr A3 16535 11693
+encoding utf-8
+Sheet 1 1
+Title "galvanus"
+Date "10 oct 2016"
+Rev "001"
+Comp "AIDS"
+Comment1 "Get it quick and die slowly"
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L SN74LV1T126 U5
+U 1 1 57FA7E5F
+P 2100 2300
+F 0 "U5" H 2100 2650 60  0000 C CNN
+F 1 "SN74LV1T126" H 2100 1950 60  0000 C CNN
+F 2 "~" H 2100 2300 60  0000 C CNN
+F 3 "~" H 2100 2300 60  0000 C CNN
+	1    2100 2300
+	1    0    0    -1  
+$EndComp
+$Comp
+L SN74LV1T126 U1
+U 1 1 57FA7E6E
+P 2050 1350
+F 0 "U1" H 2050 1700 60  0000 C CNN
+F 1 "SN74LV1T126" H 2050 1000 60  0000 C CNN
+F 2 "~" H 2050 1350 60  0000 C CNN
+F 3 "~" H 2050 1350 60  0000 C CNN
+	1    2050 1350
+	-1   0    0    -1  
+$EndComp
+$Comp
+L SN74LV1T126 U17
+U 1 1 57FA7E7D
+P 5400 2250
+F 0 "U17" H 5400 2600 60  0000 C CNN
+F 1 "SN74LV1T126" H 5400 1900 60  0000 C CNN
+F 2 "~" H 5400 2250 60  0000 C CNN
+F 3 "~" H 5400 2250 60  0000 C CNN
+	1    5400 2250
+	1    0    0    -1  
+$EndComp
+$Comp
+L SN74LV1T126 U13
+U 1 1 57FA7E8C
+P 5350 1350
+F 0 "U13" H 5350 1700 60  0000 C CNN
+F 1 "SN74LV1T126" H 5350 1000 60  0000 C CNN
+F 2 "~" H 5350 1350 60  0000 C CNN
+F 3 "~" H 5350 1350 60  0000 C CNN
+	1    5350 1350
+	-1   0    0    -1  
+$EndComp
+$Comp
+L MAX12931 U9
+U 1 1 57FA49F1
+P 3700 1750
+F 0 "U9" H 3700 2150 60  0000 C CNN
+F 1 "MAX12931" H 3700 1300 60  0000 C CNN
+F 2 "~" H 3800 1550 60  0000 C CNN
+F 3 "~" H 3800 1550 60  0000 C CNN
+	1    3700 1750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2650 2450 2800 2450
+Wire Wire Line
+	2800 2450 2800 1850
+Wire Wire Line
+	2800 1850 2950 1850
+Wire Wire Line
+	1200 2150 1500 2150
+Wire Wire Line
+	1200 2450 1500 2450
+Wire Wire Line
+	1200 1200 1500 1200
+Wire Wire Line
+	2650 1350 2800 1350
+Wire Wire Line
+	2800 1350 2800 1700
+Wire Wire Line
+	2800 1700 2950 1700
+Wire Wire Line
+	4800 1500 4650 1500
+Wire Wire Line
+	4650 1500 4650 1700
+Wire Wire Line
+	4650 1700 4450 1700
+Wire Wire Line
+	4450 1850 4650 1850
+Wire Wire Line
+	4650 1850 4650 2250
+Wire Wire Line
+	4650 2250 4800 2250
+Wire Wire Line
+	5950 2400 6150 2400
+Wire Wire Line
+	6150 2400 6150 1350
+Wire Wire Line
+	6150 1350 5950 1350
+Wire Wire Line
+	6150 1800 6350 1800
+Connection ~ 6150 1800
+Text GLabel 1200 700  0    60   Input ~ 0
+MCU_VDD
+Text GLabel 6350 900  2    60   Input ~ 0
+TARGET_VDD
+Text GLabel 1200 2700 0    60   Input ~ 0
+MCU_VSS
+Text GLabel 6400 2650 2    60   Input ~ 0
+TARGET_VSS
+Wire Wire Line
+	2850 700  2850 2150
+Wire Wire Line
+	2850 1550 2950 1550
+Wire Wire Line
+	4550 900  4550 1550
+Wire Wire Line
+	4550 1550 4450 1550
+Wire Wire Line
+	2900 2000 2950 2000
+Wire Wire Line
+	4550 2000 4450 2000
+Wire Wire Line
+	1500 2300 1300 2300
+Wire Wire Line
+	1300 2300 1300 1500
+Wire Wire Line
+	1300 1500 1500 1500
+Wire Wire Line
+	1300 1900 1200 1900
+Connection ~ 1300 1900
+Text GLabel 1200 1200 0    60   Input ~ 0
+MCU_VDD
+Text GLabel 1200 1900 0    60   Input ~ 0
+MCU_P0
+Text GLabel 1200 2150 0    60   Input ~ 0
+MCU_W0
+Text GLabel 1200 2450 0    60   Input ~ 0
+MCU_VSS
+Wire Wire Line
+	2650 1200 2750 1200
+Wire Wire Line
+	2750 1200 2750 900 
+Wire Wire Line
+	2750 900  1200 900 
+Text GLabel 1200 900  0    60   Input ~ 0
+MCU_R0
+Wire Wire Line
+	2650 1500 2750 1500
+Wire Wire Line
+	2750 1500 2750 1750
+Wire Wire Line
+	2750 1750 1200 1750
+Text GLabel 1200 1750 0    60   Input ~ 0
+MCU_VSS
+Wire Wire Line
+	2850 2150 2650 2150
+Connection ~ 2850 1550
+Wire Wire Line
+	4800 1200 4550 1200
+Connection ~ 4550 1200
+Wire Wire Line
+	5950 1200 6350 1200
+Wire Wire Line
+	5950 1500 6350 1500
+Wire Wire Line
+	5950 2100 6350 2100
+Wire Wire Line
+	4800 2100 4700 2100
+Wire Wire Line
+	4700 2100 4700 1950
+Wire Wire Line
+	4700 1950 6350 1950
+Wire Wire Line
+	2850 700  1200 700 
+Wire Wire Line
+	2900 2700 2900 2000
+Wire Wire Line
+	1200 2700 2900 2700
+Wire Wire Line
+	6400 2650 4650 2650
+Wire Wire Line
+	4650 2650 4650 2400
+Wire Wire Line
+	4550 2400 4800 2400
+Wire Wire Line
+	4550 2000 4550 2400
+Connection ~ 4650 2400
+Text GLabel 6350 2100 2    60   Input ~ 0
+TARGET_VDD
+Text GLabel 6350 1950 2    60   Input ~ 0
+MCU_W0
+Text GLabel 6350 1800 2    60   Input ~ 0
+IO_0
+Text GLabel 6350 1500 2    60   Input ~ 0
+TARGET_VSS
+Text GLabel 6350 1200 2    60   Input ~ 0
+MCU_R0
+Wire Wire Line
+	6350 900  4550 900 
+$Comp
+L SN74LV1T126 U6
+U 1 1 57FA95BF
+P 2100 4650
+F 0 "U6" H 2100 5000 60  0000 C CNN
+F 1 "SN74LV1T126" H 2100 4300 60  0000 C CNN
+F 2 "~" H 2100 4650 60  0000 C CNN
+F 3 "~" H 2100 4650 60  0000 C CNN
+	1    2100 4650
+	1    0    0    -1  
+$EndComp
+$Comp
+L SN74LV1T126 U2
+U 1 1 57FA95C5
+P 2050 3700
+F 0 "U2" H 2050 4050 60  0000 C CNN
+F 1 "SN74LV1T126" H 2050 3350 60  0000 C CNN
+F 2 "~" H 2050 3700 60  0000 C CNN
+F 3 "~" H 2050 3700 60  0000 C CNN
+	1    2050 3700
+	-1   0    0    -1  
+$EndComp
+$Comp
+L SN74LV1T126 U18
+U 1 1 57FA95CB
+P 5400 4600
+F 0 "U18" H 5400 4950 60  0000 C CNN
+F 1 "SN74LV1T126" H 5400 4250 60  0000 C CNN
+F 2 "~" H 5400 4600 60  0000 C CNN
+F 3 "~" H 5400 4600 60  0000 C CNN
+	1    5400 4600
+	1    0    0    -1  
+$EndComp
+$Comp
+L SN74LV1T126 U14
+U 1 1 57FA95D1
+P 5350 3700
+F 0 "U14" H 5350 4050 60  0000 C CNN
+F 1 "SN74LV1T126" H 5350 3350 60  0000 C CNN
+F 2 "~" H 5350 3700 60  0000 C CNN
+F 3 "~" H 5350 3700 60  0000 C CNN
+	1    5350 3700
+	-1   0    0    -1  
+$EndComp
+$Comp
+L MAX12931 U10
+U 1 1 57FA95D7
+P 3700 4100
+F 0 "U10" H 3700 4500 60  0000 C CNN
+F 1 "MAX12931" H 3700 3650 60  0000 C CNN
+F 2 "~" H 3800 3900 60  0000 C CNN
+F 3 "~" H 3800 3900 60  0000 C CNN
+	1    3700 4100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2650 4800 2800 4800
+Wire Wire Line
+	2800 4800 2800 4200
+Wire Wire Line
+	2800 4200 2950 4200
+Wire Wire Line
+	1200 4500 1500 4500
+Wire Wire Line
+	1200 4800 1500 4800
+Wire Wire Line
+	1200 3550 1500 3550
+Wire Wire Line
+	2650 3700 2800 3700
+Wire Wire Line
+	2800 3700 2800 4050
+Wire Wire Line
+	2800 4050 2950 4050
+Wire Wire Line
+	4800 3850 4650 3850
+Wire Wire Line
+	4650 3850 4650 4050
+Wire Wire Line
+	4650 4050 4450 4050
+Wire Wire Line
+	4450 4200 4650 4200
+Wire Wire Line
+	4650 4200 4650 4600
+Wire Wire Line
+	4650 4600 4800 4600
+Wire Wire Line
+	5950 4750 6150 4750
+Wire Wire Line
+	6150 4750 6150 3700
+Wire Wire Line
+	6150 3700 5950 3700
+Wire Wire Line
+	6150 4150 6350 4150
+Connection ~ 6150 4150
+Text GLabel 1200 3050 0    60   Input ~ 0
+MCU_VDD
+Text GLabel 6350 3250 2    60   Input ~ 0
+TARGET_VDD
+Text GLabel 1200 5050 0    60   Input ~ 0
+MCU_VSS
+Text GLabel 6400 5000 2    60   Input ~ 0
+TARGET_VSS
+Wire Wire Line
+	2850 3050 2850 4500
+Wire Wire Line
+	2850 3900 2950 3900
+Wire Wire Line
+	4550 3250 4550 3900
+Wire Wire Line
+	4550 3900 4450 3900
+Wire Wire Line
+	2900 4350 2950 4350
+Wire Wire Line
+	4550 4350 4450 4350
+Wire Wire Line
+	1500 4650 1300 4650
+Wire Wire Line
+	1300 4650 1300 3850
+Wire Wire Line
+	1300 3850 1500 3850
+Wire Wire Line
+	1300 4250 1200 4250
+Connection ~ 1300 4250
+Text GLabel 1200 3550 0    60   Input ~ 0
+MCU_VDD
+Text GLabel 1200 4250 0    60   Input ~ 0
+MCU_P1
+Text GLabel 1200 4500 0    60   Input ~ 0
+MCU_W1
+Text GLabel 1200 4800 0    60   Input ~ 0
+MCU_VSS
+Wire Wire Line
+	2650 3550 2750 3550
+Wire Wire Line
+	2750 3550 2750 3250
+Wire Wire Line
+	2750 3250 1200 3250
+Text GLabel 1200 3250 0    60   Input ~ 0
+MCU_R1
+Wire Wire Line
+	2650 3850 2750 3850
+Wire Wire Line
+	2750 3850 2750 4100
+Wire Wire Line
+	2750 4100 1200 4100
+Text GLabel 1200 4100 0    60   Input ~ 0
+MCU_VSS
+Wire Wire Line
+	2850 4500 2650 4500
+Connection ~ 2850 3900
+Wire Wire Line
+	4800 3550 4550 3550
+Connection ~ 4550 3550
+Wire Wire Line
+	5950 3550 6350 3550
+Wire Wire Line
+	5950 3850 6350 3850
+Wire Wire Line
+	5950 4450 6350 4450
+Wire Wire Line
+	4800 4450 4700 4450
+Wire Wire Line
+	4700 4450 4700 4300
+Wire Wire Line
+	4700 4300 6350 4300
+Wire Wire Line
+	2850 3050 1200 3050
+Wire Wire Line
+	2900 5050 2900 4350
+Wire Wire Line
+	1200 5050 2900 5050
+Wire Wire Line
+	6400 5000 4650 5000
+Wire Wire Line
+	4650 5000 4650 4750
+Wire Wire Line
+	4550 4750 4800 4750
+Wire Wire Line
+	4550 4350 4550 4750
+Connection ~ 4650 4750
+Text GLabel 6350 4450 2    60   Input ~ 0
+TARGET_VDD
+Text GLabel 6350 4300 2    60   Input ~ 0
+MCU_W1
+Text GLabel 6350 4150 2    60   Input ~ 0
+IO_1
+Text GLabel 6350 3850 2    60   Input ~ 0
+TARGET_VSS
+Text GLabel 6350 3550 2    60   Input ~ 0
+MCU_R1
+Wire Wire Line
+	6350 3250 4550 3250
+$Comp
+L SN74LV1T126 U7
+U 1 1 57FA9624
+P 2100 6950
+F 0 "U7" H 2100 7300 60  0000 C CNN
+F 1 "SN74LV1T126" H 2100 6600 60  0000 C CNN
+F 2 "~" H 2100 6950 60  0000 C CNN
+F 3 "~" H 2100 6950 60  0000 C CNN
+	1    2100 6950
+	1    0    0    -1  
+$EndComp
+$Comp
+L SN74LV1T126 U3
+U 1 1 57FA962A
+P 2050 6000
+F 0 "U3" H 2050 6350 60  0000 C CNN
+F 1 "SN74LV1T126" H 2050 5650 60  0000 C CNN
+F 2 "~" H 2050 6000 60  0000 C CNN
+F 3 "~" H 2050 6000 60  0000 C CNN
+	1    2050 6000
+	-1   0    0    -1  
+$EndComp
+$Comp
+L SN74LV1T126 U19
+U 1 1 57FA9630
+P 5400 6900
+F 0 "U19" H 5400 7250 60  0000 C CNN
+F 1 "SN74LV1T126" H 5400 6550 60  0000 C CNN
+F 2 "~" H 5400 6900 60  0000 C CNN
+F 3 "~" H 5400 6900 60  0000 C CNN
+	1    5400 6900
+	1    0    0    -1  
+$EndComp
+$Comp
+L SN74LV1T126 U15
+U 1 1 57FA9636
+P 5350 6000
+F 0 "U15" H 5350 6350 60  0000 C CNN
+F 1 "SN74LV1T126" H 5350 5650 60  0000 C CNN
+F 2 "~" H 5350 6000 60  0000 C CNN
+F 3 "~" H 5350 6000 60  0000 C CNN
+	1    5350 6000
+	-1   0    0    -1  
+$EndComp
+$Comp
+L MAX12931 U11
+U 1 1 57FA963C
+P 3700 6400
+F 0 "U11" H 3700 6800 60  0000 C CNN
+F 1 "MAX12931" H 3700 5950 60  0000 C CNN
+F 2 "~" H 3800 6200 60  0000 C CNN
+F 3 "~" H 3800 6200 60  0000 C CNN
+	1    3700 6400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2650 7100 2800 7100
+Wire Wire Line
+	2800 7100 2800 6500
+Wire Wire Line
+	2800 6500 2950 6500
+Wire Wire Line
+	1200 6800 1500 6800
+Wire Wire Line
+	1200 7100 1500 7100
+Wire Wire Line
+	1200 5850 1500 5850
+Wire Wire Line
+	2650 6000 2800 6000
+Wire Wire Line
+	2800 6000 2800 6350
+Wire Wire Line
+	2800 6350 2950 6350
+Wire Wire Line
+	4800 6150 4650 6150
+Wire Wire Line
+	4650 6150 4650 6350
+Wire Wire Line
+	4650 6350 4450 6350
+Wire Wire Line
+	4450 6500 4650 6500
+Wire Wire Line
+	4650 6500 4650 6900
+Wire Wire Line
+	4650 6900 4800 6900
+Wire Wire Line
+	5950 7050 6150 7050
+Wire Wire Line
+	6150 7050 6150 6000
+Wire Wire Line
+	6150 6000 5950 6000
+Wire Wire Line
+	6150 6450 6350 6450
+Connection ~ 6150 6450
+Text GLabel 1200 5350 0    60   Input ~ 0
+MCU_VDD
+Text GLabel 6350 5550 2    60   Input ~ 0
+TARGET_VDD
+Text GLabel 1200 7350 0    60   Input ~ 0
+MCU_VSS
+Text GLabel 6400 7300 2    60   Input ~ 0
+TARGET_VSS
+Wire Wire Line
+	2850 5350 2850 6800
+Wire Wire Line
+	2850 6200 2950 6200
+Wire Wire Line
+	4550 5550 4550 6200
+Wire Wire Line
+	4550 6200 4450 6200
+Wire Wire Line
+	2900 6650 2950 6650
+Wire Wire Line
+	4550 6650 4450 6650
+Wire Wire Line
+	1500 6950 1300 6950
+Wire Wire Line
+	1300 6950 1300 6150
+Wire Wire Line
+	1300 6150 1500 6150
+Wire Wire Line
+	1300 6550 1200 6550
+Connection ~ 1300 6550
+Text GLabel 1200 5850 0    60   Input ~ 0
+MCU_VDD
+Text GLabel 1200 6550 0    60   Input ~ 0
+MCU_P2
+Text GLabel 1200 6800 0    60   Input ~ 0
+MCU_W2
+Text GLabel 1200 7100 0    60   Input ~ 0
+MCU_VSS
+Wire Wire Line
+	2650 5850 2750 5850
+Wire Wire Line
+	2750 5850 2750 5550
+Wire Wire Line
+	2750 5550 1200 5550
+Text GLabel 1200 5550 0    60   Input ~ 0
+MCU_R2
+Wire Wire Line
+	2650 6150 2750 6150
+Wire Wire Line
+	2750 6150 2750 6400
+Wire Wire Line
+	2750 6400 1200 6400
+Text GLabel 1200 6400 0    60   Input ~ 0
+MCU_VSS
+Wire Wire Line
+	2850 6800 2650 6800
+Connection ~ 2850 6200
+Wire Wire Line
+	4800 5850 4550 5850
+Connection ~ 4550 5850
+Wire Wire Line
+	5950 5850 6350 5850
+Wire Wire Line
+	5950 6150 6350 6150
+Wire Wire Line
+	5950 6750 6350 6750
+Wire Wire Line
+	4800 6750 4700 6750
+Wire Wire Line
+	4700 6750 4700 6600
+Wire Wire Line
+	4700 6600 6350 6600
+Wire Wire Line
+	2850 5350 1200 5350
+Wire Wire Line
+	2900 7350 2900 6650
+Wire Wire Line
+	1200 7350 2900 7350
+Wire Wire Line
+	6400 7300 4650 7300
+Wire Wire Line
+	4650 7300 4650 7050
+Wire Wire Line
+	4550 7050 4800 7050
+Wire Wire Line
+	4550 6650 4550 7050
+Connection ~ 4650 7050
+Text GLabel 6350 6750 2    60   Input ~ 0
+TARGET_VDD
+Text GLabel 6350 6600 2    60   Input ~ 0
+MCU_W2
+Text GLabel 6350 6450 2    60   Input ~ 0
+IO_2
+Text GLabel 6350 6150 2    60   Input ~ 0
+TARGET_VSS
+Text GLabel 6350 5850 2    60   Input ~ 0
+MCU_R2
+Wire Wire Line
+	6350 5550 4550 5550
+$Comp
+L SN74LV1T126 U8
+U 1 1 57FA9689
+P 2100 9250
+F 0 "U8" H 2100 9600 60  0000 C CNN
+F 1 "SN74LV1T126" H 2100 8900 60  0000 C CNN
+F 2 "~" H 2100 9250 60  0000 C CNN
+F 3 "~" H 2100 9250 60  0000 C CNN
+	1    2100 9250
+	1    0    0    -1  
+$EndComp
+$Comp
+L SN74LV1T126 U4
+U 1 1 57FA968F
+P 2050 8300
+F 0 "U4" H 2050 8650 60  0000 C CNN
+F 1 "SN74LV1T126" H 2050 7950 60  0000 C CNN
+F 2 "~" H 2050 8300 60  0000 C CNN
+F 3 "~" H 2050 8300 60  0000 C CNN
+	1    2050 8300
+	-1   0    0    -1  
+$EndComp
+$Comp
+L SN74LV1T126 U20
+U 1 1 57FA9695
+P 5400 9200
+F 0 "U20" H 5400 9550 60  0000 C CNN
+F 1 "SN74LV1T126" H 5400 8850 60  0000 C CNN
+F 2 "~" H 5400 9200 60  0000 C CNN
+F 3 "~" H 5400 9200 60  0000 C CNN
+	1    5400 9200
+	1    0    0    -1  
+$EndComp
+$Comp
+L SN74LV1T126 U16
+U 1 1 57FA969B
+P 5350 8300
+F 0 "U16" H 5350 8650 60  0000 C CNN
+F 1 "SN74LV1T126" H 5350 7950 60  0000 C CNN
+F 2 "~" H 5350 8300 60  0000 C CNN
+F 3 "~" H 5350 8300 60  0000 C CNN
+	1    5350 8300
+	-1   0    0    -1  
+$EndComp
+$Comp
+L MAX12931 U12
+U 1 1 57FA96A1
+P 3700 8700
+F 0 "U12" H 3700 9100 60  0000 C CNN
+F 1 "MAX12931" H 3700 8250 60  0000 C CNN
+F 2 "~" H 3800 8500 60  0000 C CNN
+F 3 "~" H 3800 8500 60  0000 C CNN
+	1    3700 8700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2650 9400 2800 9400
+Wire Wire Line
+	2800 9400 2800 8800
+Wire Wire Line
+	2800 8800 2950 8800
+Wire Wire Line
+	1200 9100 1500 9100
+Wire Wire Line
+	1200 9400 1500 9400
+Wire Wire Line
+	1200 8150 1500 8150
+Wire Wire Line
+	2650 8300 2800 8300
+Wire Wire Line
+	2800 8300 2800 8650
+Wire Wire Line
+	2800 8650 2950 8650
+Wire Wire Line
+	4800 8450 4650 8450
+Wire Wire Line
+	4650 8450 4650 8650
+Wire Wire Line
+	4650 8650 4450 8650
+Wire Wire Line
+	4450 8800 4650 8800
+Wire Wire Line
+	4650 8800 4650 9200
+Wire Wire Line
+	4650 9200 4800 9200
+Wire Wire Line
+	5950 9350 6150 9350
+Wire Wire Line
+	6150 9350 6150 8300
+Wire Wire Line
+	6150 8300 5950 8300
+Wire Wire Line
+	6150 8750 6350 8750
+Connection ~ 6150 8750
+Text GLabel 1200 7650 0    60   Input ~ 0
+MCU_VDD
+Text GLabel 6350 7850 2    60   Input ~ 0
+TARGET_VDD
+Text GLabel 1200 9650 0    60   Input ~ 0
+MCU_VSS
+Text GLabel 6400 9600 2    60   Input ~ 0
+TARGET_VSS
+Wire Wire Line
+	2850 7650 2850 9100
+Wire Wire Line
+	2850 8500 2950 8500
+Wire Wire Line
+	4550 7850 4550 8500
+Wire Wire Line
+	4550 8500 4450 8500
+Wire Wire Line
+	2900 8950 2950 8950
+Wire Wire Line
+	4550 8950 4450 8950
+Wire Wire Line
+	1500 9250 1300 9250
+Wire Wire Line
+	1300 9250 1300 8450
+Wire Wire Line
+	1300 8450 1500 8450
+Wire Wire Line
+	1300 8850 1200 8850
+Connection ~ 1300 8850
+Text GLabel 1200 8150 0    60   Input ~ 0
+MCU_VDD
+Text GLabel 1200 8850 0    60   Input ~ 0
+MCU_P3
+Text GLabel 1200 9100 0    60   Input ~ 0
+MCU_W3
+Text GLabel 1200 9400 0    60   Input ~ 0
+MCU_VSS
+Wire Wire Line
+	2650 8150 2750 8150
+Wire Wire Line
+	2750 8150 2750 7850
+Wire Wire Line
+	2750 7850 1200 7850
+Text GLabel 1200 7850 0    60   Input ~ 0
+MCU_R3
+Wire Wire Line
+	2650 8450 2750 8450
+Wire Wire Line
+	2750 8450 2750 8700
+Wire Wire Line
+	2750 8700 1200 8700
+Text GLabel 1200 8700 0    60   Input ~ 0
+MCU_VSS
+Wire Wire Line
+	2850 9100 2650 9100
+Connection ~ 2850 8500
+Wire Wire Line
+	4800 8150 4550 8150
+Connection ~ 4550 8150
+Wire Wire Line
+	5950 8150 6350 8150
+Wire Wire Line
+	5950 8450 6350 8450
+Wire Wire Line
+	5950 9050 6350 9050
+Wire Wire Line
+	4800 9050 4700 9050
+Wire Wire Line
+	4700 9050 4700 8900
+Wire Wire Line
+	4700 8900 6350 8900
+Wire Wire Line
+	2850 7650 1200 7650
+Wire Wire Line
+	2900 9650 2900 8950
+Wire Wire Line
+	1200 9650 2900 9650
+Wire Wire Line
+	6400 9600 4650 9600
+Wire Wire Line
+	4650 9600 4650 9350
+Wire Wire Line
+	4550 9350 4800 9350
+Wire Wire Line
+	4550 8950 4550 9350
+Connection ~ 4650 9350
+Text GLabel 6350 9050 2    60   Input ~ 0
+TARGET_VDD
+Text GLabel 6350 8900 2    60   Input ~ 0
+MCU_W3
+Text GLabel 6350 8750 2    60   Input ~ 0
+IO_3
+Text GLabel 6350 8450 2    60   Input ~ 0
+TARGET_VSS
+Text GLabel 6350 8150 2    60   Input ~ 0
+MCU_R3
+Wire Wire Line
+	6350 7850 4550 7850
+$Comp
+L CONN_6 P1
+U 1 1 57FA9703
+P 10150 1250
+F 0 "P1" V 10100 1250 60  0000 C CNN
+F 1 "CONN_6" V 10200 1250 60  0000 C CNN
+F 2 "" H 10150 1250 60  0000 C CNN
+F 3 "" H 10150 1250 60  0000 C CNN
+	1    10150 1250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9800 1000 9650 1000
+Wire Wire Line
+	9800 1100 9650 1100
+Wire Wire Line
+	9800 1200 9650 1200
+Wire Wire Line
+	9800 1300 9650 1300
+Wire Wire Line
+	9800 1400 9650 1400
+Wire Wire Line
+	9800 1500 9650 1500
+Text GLabel 9650 1500 0    60   Input ~ 0
+TARGET_VSS
+Text GLabel 9650 1400 0    60   Input ~ 0
+IO_3
+Text GLabel 9650 1300 0    60   Input ~ 0
+IO_2
+Text GLabel 9650 1200 0    60   Input ~ 0
+IO_1
+Text GLabel 9650 1100 0    60   Input ~ 0
+IO_0
+Text GLabel 9650 1000 0    60   Input ~ 0
+TARGET_VDD
+$Comp
+L CONN_3 K1
+U 1 1 57FA9D25
+P 10150 2150
+F 0 "K1" V 10100 2150 50  0000 C CNN
+F 1 "CONN_3" V 10200 2150 40  0000 C CNN
+F 2 "" H 10150 2150 60  0000 C CNN
+F 3 "" H 10150 2150 60  0000 C CNN
+	1    10150 2150
+	1    0    0    -1  
+$EndComp
+$Comp
+L CONN_3 K2
+U 1 1 57FA9D34
+P 10150 2650
+F 0 "K2" V 10100 2650 50  0000 C CNN
+F 1 "CONN_3" V 10200 2650 40  0000 C CNN
+F 2 "" H 10150 2650 60  0000 C CNN
+F 3 "" H 10150 2650 60  0000 C CNN
+	1    10150 2650
+	1    0    0    -1  
+$EndComp
+$Comp
+L CONN_3 K3
+U 1 1 57FA9D43
+P 10150 3100
+F 0 "K3" V 10100 3100 50  0000 C CNN
+F 1 "CONN_3" V 10200 3100 40  0000 C CNN
+F 2 "" H 10150 3100 60  0000 C CNN
+F 3 "" H 10150 3100 60  0000 C CNN
+	1    10150 3100
+	1    0    0    -1  
+$EndComp
+$Comp
+L CONN_3 K4
+U 1 1 57FA9D52
+P 10150 3550
+F 0 "K4" V 10100 3550 50  0000 C CNN
+F 1 "CONN_3" V 10200 3550 40  0000 C CNN
+F 2 "" H 10150 3550 60  0000 C CNN
+F 3 "" H 10150 3550 60  0000 C CNN
+	1    10150 3550
+	1    0    0    -1  
+$EndComp
+$Comp
+L CONN_2 P2
+U 1 1 57FA9D61
+P 10150 4000
+F 0 "P2" V 10100 4000 40  0000 C CNN
+F 1 "CONN_2" V 10200 4000 40  0000 C CNN
+F 2 "" H 10150 4000 60  0000 C CNN
+F 3 "" H 10150 4000 60  0000 C CNN
+	1    10150 4000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9800 2050 9650 2050
+Wire Wire Line
+	9650 2150 9800 2150
+Wire Wire Line
+	9800 2250 9650 2250
+Wire Wire Line
+	9800 2550 9650 2550
+Wire Wire Line
+	9800 2650 9650 2650
+Wire Wire Line
+	9800 2750 9650 2750
+Wire Wire Line
+	9800 3000 9650 3000
+Wire Wire Line
+	9800 3100 9650 3100
+Wire Wire Line
+	9800 3200 9650 3200
+Wire Wire Line
+	9800 3450 9650 3450
+Wire Wire Line
+	9800 3550 9650 3550
+Wire Wire Line
+	9800 3650 9650 3650
+Wire Wire Line
+	9800 3900 9650 3900
+Wire Wire Line
+	9800 4100 9650 4100
+Text GLabel 9650 2050 0    60   Input ~ 0
+MCU_R0
+Text GLabel 9650 2150 0    60   Input ~ 0
+MCU_W0
+Text GLabel 9650 2250 0    60   Input ~ 0
+MCU_P0
+Text GLabel 9650 2550 0    60   Input ~ 0
+MCU_R1
+Text GLabel 9650 2650 0    60   Input ~ 0
+MCU_W1
+Text GLabel 9650 2750 0    60   Input ~ 0
+MCU_P1
+Text GLabel 9650 3000 0    60   Input ~ 0
+MCU_R2
+Text GLabel 9650 3100 0    60   Input ~ 0
+MCU_W2
+Text GLabel 9650 3200 0    60   Input ~ 0
+MCU_P2
+Text GLabel 9650 3450 0    60   Input ~ 0
+MCU_R3
+Text GLabel 9650 3550 0    60   Input ~ 0
+MCU_P3
+Text GLabel 9650 3650 0    60   Input ~ 0
+MCU_W3
+Text GLabel 9650 3900 0    60   Input ~ 0
+MCU_VSS
+Text GLabel 9650 4100 0    60   Input ~ 0
+MCU_VDD
+$EndSCHEMATC
