@@ -1,6 +1,6 @@
-update=Sun 09 Oct 2016 03:25:50 PM EDT
+update=Tue 11 Oct 2016 04:20:27 AM EDT
 version=1
-last_client=cvpcb
+last_client=eeschema
 [pcbnew]
 version=1
 LastNetListRead=
@@ -111,6 +111,11 @@ LibName87=WirePads_RevA_15Jun2010
 LibDir=
 [general]
 version=1
+[cvpcb]
+version=1
+NetIExt=net
+[cvpcb/libraries]
+EquName1=devcms
 [eeschema]
 version=1
 LibDir=
@@ -152,8 +157,3 @@ LibName29=contrib
 LibName30=valves
 LibName31=libs/maxim
 LibName32=libs/ti
-[cvpcb]
-version=1
-NetIExt=net
-[cvpcb/libraries]
-EquName1=devcms
